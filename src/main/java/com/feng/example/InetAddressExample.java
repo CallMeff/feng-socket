@@ -9,7 +9,7 @@ import java.net.*;
 public class InetAddressExample {
     public static void main(String[] args) {
 
-        // Get the network interfaces and associated addresses for this host
+        // Get the network interfaces and associated  addresses for this host
         try {
             Enumeration<NetworkInterface> interfaceList = NetworkInterface.getNetworkInterfaces();
             if (interfaceList == null) {

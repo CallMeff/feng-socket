@@ -11,13 +11,9 @@ public class TCPEchoServer {
 
     private static final int BUFSIZE = 32; // Size of receive buffer
 
+    private static final int servPort = 7; //设置端口号
+
     public static void main(String[] args) throws IOException {
-
-        if (args.length != 1) // Test for correct # of args
-            throw new IllegalArgumentException("Parameter(s): <Port>");
-
-//        int servPort = Integer.parseInt(args[0]);
-        int servPort = 7;
 
         // Create a server socket to accept client connection requests
         ServerSocket servSock = new ServerSocket(servPort);
@@ -39,6 +35,5 @@ public class TCPEchoServer {
             }
             clntSock.close(); // Close the socket. We are done with this client!
         }
-        /* NOT REACHED */
     }
 }

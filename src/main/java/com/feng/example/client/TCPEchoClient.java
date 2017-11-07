@@ -22,7 +22,7 @@ public class TCPEchoClient {
         // Convert argument String to bytes using the default character encoding
         byte[] data = args[1].getBytes();
 
-        int servPort = (args.length == 3) ? Integer.parseInt(args[2]) : 7;
+        int servPort = 7;
 
         // Create socket that is connected to server on specified port
         Socket socket = new Socket(server, servPort);
